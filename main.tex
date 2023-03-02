@@ -140,6 +140,7 @@
 
 \DeclareMathOperator{\pr}{P}
 \DeclareMathOperator{\giv}{\mid}
+\DeclareMathOperator{\givmiddle}{\;\middle\vert\;}
 \DeclareMathOperator{\param}{\,\!\mathbin{;}\,}
 
 \DeclareMathOperator*{\E}{\mathbf{E}} %%% star takes subscripts below
@@ -158,8 +159,6 @@
 %%% Draft Markup
 %%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\rmtext}[1]{}
-
 %%% DRAFT %%%
 \usepackage[dvipsnames]{xcolor}
 \definecolor{ccpink}{rgb}{0.858, 0.188, 0.478}
@@ -170,13 +169,13 @@
 \definecolor{lightgrey}{rgb}{0.95, 0.95, 0.95}
 \newcommand{\wip}[1]{{\color{red}#1}}
 \newcommand{\reword}[1]{{\color{ccbrown}#1}}
-\newcommand{\hide}[1]{\leavevmode\unskip\rmtext{#1}}
+\newcommand{\hide}[1]{\ignorespaces}
 \newcommand{\dae}[1]{{\color{ccmulberry}#1}}
 
 %%% FINAL %%%
 %\newcommand{\reword}[1]{#1}
-%\newcommand{\hide}[1]{\leavevmode\unskip\rmtext{#1}}
-%\newcommand{\dae}[1]{\leavevmode\unskip\rmtext{#1}}
+%\newcommand{\hide}[1]{\ignorespaces}
+%\newcommand{\dae}[1]{\ignorespaces}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -218,7 +217,6 @@
 \noindent 
 This thesis develops a framework for computationally recapitulating human emotion understanding. I argue that expression cues and contextual information mutually constrain inference over an intuitive theory of mind. Emotion concepts reflect computations in the space of inferred appraisals, and inferred appraisals function as latent causal explanations that link expressions, actions, preferences, beliefs, costs, and world states across time. 
 \end{abstract}
-
 
 
 %%% relax \clearpage to prevent page breaks between subfiles, bibliography %%%
