@@ -32,9 +32,9 @@
     backend=biber,
     style=apa,
     natbib=true,
-    url=false, 
+    url=true,
     doi=true,
-    eprint=false,
+    eprint=true,
 %    uniquename=false,
 %    giveninits=false,
 %    uniquelist=false,
@@ -135,7 +135,7 @@
 %\renewcommand*{\vec}[1]{{\bm{#1}}}
 \let\vec\relax
 \newcommand*{\vec}[1]{\bm{#1}}
-\newcommand*{\mat}[1]{\bm{#1}}
+\newcommand*{\mat}[1]{{\bm{\mathrm{#1}}}}
 \newcommand*{\mvec}[1]{\begin{pmatrix}#1\end{pmatrix}}
 
 \DeclareMathOperator{\pr}{P}
@@ -167,9 +167,9 @@
 \definecolor{ccdgreen}{RGB}{0, 133, 19}
 \definecolor{ccbrown}{RGB}{135, 32, 1}
 \definecolor{lightgrey}{rgb}{0.95, 0.95, 0.95}
+\newcommand{\hide}[1]{\ignorespaces}
 \newcommand{\wip}[1]{{\color{red}#1}}
 \newcommand{\reword}[1]{{\color{ccbrown}#1}}
-\newcommand{\hide}[1]{\ignorespaces}
 \newcommand{\dae}[1]{{\color{ccmulberry}#1}}
 
 %%% FINAL %%%
