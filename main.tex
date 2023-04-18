@@ -194,7 +194,6 @@
 
 %\usepackage[none]{hyphenat} % Uncomment this block to turn off hyphenation.
 
-
 %%%%%%%%%%%%%%%%%%%%%%%
 %%% PDF-A Standard
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -211,13 +210,30 @@
 %	hidelinks,
 %	breaklinks=true,
 %}
-
+%
+%\begin{filecontents*}[overwrite]{\jobname.xmpdata}
+%\Title{LaTeX Template}
+%\Author{Sean Dae Houlihan}
+%\Language{en-US}
+%\Subject{The abstract or short description.}
+%\Keywords{keyword1\sep keyword2\sep keyword3}
+%\end{filecontents*}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%% Internal links
 %%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage[colorlinks=true, allcolors=blue]{hyperref} % hyperlinks - best loaded at end of preamble
+\hypersetup{
+	hidelinks,
+	breaklinks=true,
+	pdftitle={LaTeX Template},
+	pdfauthor={Sean Dae Houlihan},
+	pdflang={en-US},
+	pdfsubject={The abstract or short description.},
+	pdfkeywords={keyword1, keyword2, keyword3},
+	pdfstartview=
+}
 \usepackage{subfiles} % subfiles - best loaded last in the preamble
 
 %%%%%%%%%%%%%%%%%%%%%%%
